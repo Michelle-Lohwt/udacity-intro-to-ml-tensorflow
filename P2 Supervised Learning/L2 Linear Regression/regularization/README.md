@@ -7,3 +7,5 @@ https://user-images.githubusercontent.com/60863955/184530943-7e979106-f57e-436a-
 3. 
 ![image](https://user-images.githubusercontent.com/60863955/184530861-80bdac36-08ea-4475-9f31-56f06b85cf42.png)
 
+## To discuss
+1. When to knoww a linear regression should proceed to do L1, L2 or polynomial regression?
