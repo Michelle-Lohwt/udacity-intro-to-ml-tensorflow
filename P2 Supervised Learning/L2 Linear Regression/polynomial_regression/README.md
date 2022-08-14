@@ -5,3 +5,7 @@
 3. [fit_transform() for training, transform() for testing](https://towardsdatascience.com/what-and-why-behind-fit-transform-vs-transform-in-scikit-learn-78f915cf96fe)
 4. [Feature Engineering using PolynomialFeatures before Linear Regression](https://www.analyticsvidhya.com/blog/2021/07/all-you-need-to-know-about-polynomial-regression/)
 5. [R2score vs MSE](https://www.bmc.com/blogs/mean-squared-error-r2-and-variance-in-regression-analysis/)
+
+
+## Summary
+1. Polynomial Regression is a type of Linear Regression because it uses the independent variable and dependent variable to form a polynomial equation.
