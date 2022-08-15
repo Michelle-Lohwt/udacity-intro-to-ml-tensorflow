@@ -16,9 +16,21 @@ This will create a new "standardized" column where each value is a comparison to
 A second type of feature scaling that is very popular is known as normalizing. With normalizing, data are scaled between 0 and 1. Using the same example as above, we could perform normalizing in Python in the following way:
 
 ```
-df["height_normal"] = (df["height"] - df["height"].min()) /     \
-                      (df["height"].max() - df['height'].min())
+df["height_normal"] = (df["height"] - df["height"].min()) / (df["height"].max() - df['height'].min())
 ```
+
+## Standardization vs Normalization
+1. Standardization transforms features coming from any distribution so that, it will have zero mean and unit variance. 
+2. Normalization reduces measurements to a “neutral” or “standard” scale.
+
+|Standardization|Normalization|
+|---------------|-------------|
+|Standardization is better when we have outliers as outliers will have large negative or positive values while inliers will have values around 0.|Normalization does not handle outliers with ease. It could result in outliers having values closer to 0 and 1 and most inliers concentrated in a small band of values.
+|Standardization can result in any value, both positive and negative.|Normalization is better if we want all resulting values in the interval [0,1]|
+|Assumes data has a Gaussian (bell curve) distribution, suitable for: linear regression, logistic regression, and linear discriminant analysis.|Use when the distribution of data is unknown or not Gaussian distribution (a bell curve), suitable for: k-nearest neighbors and artificial neural networks.|
+
+Read [here](https://medium.com/@jalesh.j/column-normalization-and-column-standardization-in-machine-learning-e056501056b) and [here](https://towardsai.net/p/data-science/how-when-and-why-should-you-normalize-standardize-rescale-your-data-3f083def38ff) for detail explanation.
+
 
 ## When Should I Use Feature Scaling?
 In many machine learning algorithms, the result will change depending on the units of your data. This is especially true in two specific cases:
